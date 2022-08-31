@@ -8,11 +8,13 @@ const Navbar = ({ isAuth }) => {
   return (
     <nav>
       <Link to="/"><FontAwesomeIcon icon={faHouse} />ホーム</Link>
-      <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />記事投稿</Link>
       {!isAuth ? (
           <Link to="/login"><FontAwesomeIcon icon={faArrowAltCircleRight} />ログイン</Link>
         ) : (
-          <Link to="/logout"><FontAwesomeIcon icon={faArrowAltCircleLeft} />ログアウト</Link>
+          <>
+            <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />記事投稿</Link>
+            <Link to="/logout"><FontAwesomeIcon icon={faArrowAltCircleLeft} />ログアウト</Link>
+          </>
       )}
     </nav>
   )

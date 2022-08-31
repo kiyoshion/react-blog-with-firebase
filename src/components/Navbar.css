@@ -2,19 +2,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(231, 216, 197);
-  height: 80px;
+  background-color: rgb(52, 50, 47);
+  height: 60px;
 }
 
 nav a {
-  color: #444;
+  color: #fff;
   text-decoration: none;
   padding: .5rem 1rem;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #999;
+  color: #aaa;
   transition: all .2s ease;
 }
 

@@ -1,13 +1,13 @@
 .homePage {
   width: 100%;
-  height: auto;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
-  background-color: rgb(224, 224, 233);
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  background-color: rgb(236, 244, 246);
 }
 
 .homePage .postContents {
@@ -18,6 +18,7 @@
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
   border-radius: .5rem;
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .postContents h1 {
